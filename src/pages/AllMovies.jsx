@@ -11,7 +11,7 @@ const AllMovies = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [movies, setMovies] = useState([]);
   const { data, loading } = useFetch(
-    `${baseUrl}/trending/movie/week?${apiKey}&language=en-US&page=${currentPage}`
+    `${baseUrl}/trending/movie/week?${apiKey}&language=hi-IN&page=${currentPage}`
   );
 
   useEffect(() => {
