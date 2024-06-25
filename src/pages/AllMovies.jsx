@@ -12,7 +12,7 @@ const AllMovies = () => {
   const [movies, setMovies] = useState([]);
   const { data, loading } = useFetch(
    `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&with_original_language=hi&page=${currentPage}`
-    //`${baseUrl}/trending/movie/week?${apiKey}&language=en-US&page=${currentPage}`
+    //`${baseUrl}/trending/movie/week?api_key=${apiKey}&language=en-US&page=${currentPage}`
   );
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const AllMovies = () => {
                     key={film.id}
                     poster={posterImg}
                     title={film.title}
-                    type={film.media_type}
+                    type=movie
                   />
                 </Grid>
               );
@@ -51,3 +51,6 @@ const AllMovies = () => {
 };
 
 export default AllMovies;
+
+// https://github.com/dezmymachine/stream-app/tree/main
+// type={film.media_type}
