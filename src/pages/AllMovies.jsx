@@ -11,7 +11,7 @@ const AllMovies = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [movies, setMovies] = useState([]);
   const { data, loading } = useFetch(
-   `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&with_original_language=hi&page=${currentPage}`
+   `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&sort_by=popularity.desc&page=1&primary_release_year=2021&with_original_language=hi&page=${currentPage}`
     //`${baseUrl}/trending/movie/week?api_key=${apiKey}&language=en-US&page=${currentPage}`
   );
 
@@ -54,3 +54,4 @@ export default AllMovies;
 
 // https://github.com/dezmymachine/stream-app/tree/main
 // type={film.media_type}
+// https://api.themoviedb.org/3/discover/movie?api_key=[MY_KEY]&language=hi-IN&region=IN&sort_by=popularity.desc&page=1&primary_release_year=2018&with_original_language=hi
