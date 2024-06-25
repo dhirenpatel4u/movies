@@ -13,7 +13,8 @@ const Hero = () => {
   const apiKey = import.meta.env.VITE_API_KEY;
 
   const { data, loading } = useFetch(
-    `${baseUrl}/discover/movie?${apiKey}&language=en-US&page=1`
+    `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&sort_by=popularity.desc&primary_release_date.gte=2023-05-01&with_original_language=hi&page=1`
+    // `${baseUrl}/discover/movie?${apiKey}&language=en-US&page=1`
   );
 
   if (loading) return <Loading />;
