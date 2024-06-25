@@ -20,6 +20,7 @@ const Hero = () => {
   if (loading) return <Loading />;
   return (
     <>
+        <div> Movies Mania</div>
       <div style={{ padding: "0.5rem" }}>
         <Box
           sx={{
