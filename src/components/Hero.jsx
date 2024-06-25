@@ -34,7 +34,7 @@ const Hero = () => {
                     alignItems: "center",
                     textAlign: "center",
                     objectFit: "cover",
-                    width: "150px",
+                    width: "180px",
                   }}
                 />
         </div>
