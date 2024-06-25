@@ -12,7 +12,7 @@ export default function SearchBar() {
   const apiKey = import.meta.env.VITE_API_KEY;
   const [searchTerm, setSearchTerm] = useState("");
   const { data, loading } = useFetch(
-    `${baseUrl}/search/multi?${apiKey}&language=en-US&query=${searchTerm}&include_adult=false`
+    `${baseUrl}/search/multi?${apiKey}&language=en-US&popularity>=50&query=${searchTerm}&include_adult=false`
   );
 
   const handleChange = (event) => {
