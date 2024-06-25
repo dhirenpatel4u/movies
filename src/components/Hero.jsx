@@ -25,9 +25,9 @@ const Hero = () => {
                   loading="lazy"
                   src={`https://cdn.prod.website-files.com/64e81e52acfdaa1696fd623f/65e9387bbd982abf627bd672_MOVIE-MANIA_LOGO1_withPopcorn-p-800.png`}
                   style={{
-                    maxHeight: "400px",
+                    maxHeight: "100px",
                     objectFit: "cover",
-                    width: "40%",
+                    width: "150px",
                   }}
                 />
         </div>
