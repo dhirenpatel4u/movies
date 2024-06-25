@@ -38,7 +38,7 @@ const AllMovies = () => {
                     key={film.id}
                     poster={posterImg}
                     title={film.title}
-                    type=movie
+                    type="movie"
                   />
                 </Grid>
               );
