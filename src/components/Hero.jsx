@@ -23,6 +23,7 @@ const Hero = () => {
         <div
           style={{
             alignItems: "center",
+            width: "100%",
           }}
           >
                         <img
@@ -30,6 +31,7 @@ const Hero = () => {
                   src={`https://cdn.prod.website-files.com/64e81e52acfdaa1696fd623f/65e9387bbd982abf627bd672_MOVIE-MANIA_LOGO1_withPopcorn-p-800.png`}
                   style={{
                     maxHeight: "100px",
+                    alignItems: "center",
                     objectFit: "cover",
                     width: "150px",
                   }}
