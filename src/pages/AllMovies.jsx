@@ -11,7 +11,7 @@ const AllMovies = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [movies, setMovies] = useState([]);
   const { data, loading } = useFetch(
-   `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&sort_by=popularity.desc&primary_release_year=2021&with_original_language=hi&page=${currentPage}`
+   `${baseUrl}/discover/movie?api_key=${apiKey}&language=en-US&region=IN&sort_by=popularity.desc&primary_release_date.gte=2022-01-01&with_original_language=hi&page=${currentPage}`
     //`${baseUrl}/trending/movie/week?api_key=${apiKey}&language=en-US&page=${currentPage}`
   );
 
