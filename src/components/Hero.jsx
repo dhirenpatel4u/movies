@@ -22,7 +22,7 @@ const Hero = () => {
     <>
         <div
           style={{
-            alignItems: "center",
+            textAlign: "center",
             width: "100%",
           }}
           >
@@ -32,6 +32,7 @@ const Hero = () => {
                   style={{
                     maxHeight: "100px",
                     alignItems: "center",
+                    textAlign: "center",
                     objectFit: "cover",
                     width: "150px",
                   }}
